@@ -8,7 +8,7 @@ const Table = ({ headers, data }: TableProps) => {
           <tr>
             {headers.map((header, index) => (
               <th
-                className="px-6 py-3 text-center text-lg text-nowrap font-semibold text-gray-200 uppercase "
+                className="px-6 py-3 text-center text-sm text-nowrap font-semibold text-gray-200 uppercase "
                 key={index}
               >
                 {header}
@@ -24,7 +24,7 @@ const Table = ({ headers, data }: TableProps) => {
             >
               {headers.map((header, dataIndex) => (
                 <td
-                  className="px-5 py-4 whitespace-nowrap text-base "
+                  className="px-5 py-4 whitespace-nowrap text-sm "
                   key={dataIndex}
                 >
                   {row[header]}
